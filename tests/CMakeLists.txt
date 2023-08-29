@@ -4,8 +4,6 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/lib")
 
 add_executable(runAllTests
   test.cpp 
-)
-add_executable(runAllTests
   rectangle1.cpp
 )
 
