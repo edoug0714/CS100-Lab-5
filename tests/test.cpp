@@ -1,4 +1,4 @@
-#include "gtest/gtest.h"
+#include "googletest/googletest/include/gtest/gtest.h"
 #include "rectangle.h"
 
 TEST(ConstructorTests, testDefault) {
