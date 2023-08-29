@@ -14,5 +14,5 @@ include_directories(
   ${CMAKE_SOURCE_DIR}/test/lib/googletest/include/
 )
 
-add_subdirectory(lib)
-add_subdirectory(test)
+add_subdirectory(src)
+add_subdirectory(tests)
