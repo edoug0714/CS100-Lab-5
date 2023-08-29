@@ -1,3 +1,5 @@
+#include "gtest/gtest.h"
+#include "rectangle.h"
 
 TEST(ConstructorTests, testDefault) {
     EXPECT_NOT_THROW(Rectangle *aRectangle());
