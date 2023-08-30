@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /class/classes/edoug011/CS100-Lab-5
+CMAKE_SOURCE_DIR = /class/classes/edoug011/CS100-Lab-5/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /class/classes/edoug011/CS100-Lab-5
+CMAKE_BINARY_DIR = /class/classes/edoug011/CS100-Lab-5/tests
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /class/classes/edoug011/CS100-Lab-5 && $(CMAKE_COMMAND) -E cmake_progress_start /class/classes/edoug011/CS100-Lab-5/CMakeFiles /class/classes/edoug011/CS100-Lab-5/tests//CMakeFiles/progress.marks
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /class/classes/edoug011/CS100-Lab-5/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /class/classes/edoug011/CS100-Lab-5/tests/CMakeFiles /class/classes/edoug011/CS100-Lab-5/tests//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /class/classes/edoug011/CS100-Lab-5/tests/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -103,63 +103,62 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-tests/CMakeFiles/runAllTests.dir/rule:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/runAllTests.dir/rule
-.PHONY : tests/CMakeFiles/runAllTests.dir/rule
+#=============================================================================
+# Target rules for targets named runAllTests
 
-# Convenience name for target.
-runAllTests: tests/CMakeFiles/runAllTests.dir/rule
+# Build rule for target.
+runAllTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runAllTests
 .PHONY : runAllTests
 
 # fast build rule for target.
 runAllTests/fast:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runAllTests.dir/build.make tests/CMakeFiles/runAllTests.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/build
 .PHONY : runAllTests/fast
 
-__/src/rectangle1.o: __/src/rectangle1.cpp.o
-.PHONY : __/src/rectangle1.o
+class/classes/edoug011/CS100-Lab-5/src/rectangle1.o: class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.o
+.PHONY : class/classes/edoug011/CS100-Lab-5/src/rectangle1.o
 
 # target to build an object file
-__/src/rectangle1.cpp.o:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runAllTests.dir/build.make tests/CMakeFiles/runAllTests.dir/__/src/rectangle1.cpp.o
-.PHONY : __/src/rectangle1.cpp.o
+class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.o
+.PHONY : class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.o
 
-__/src/rectangle1.i: __/src/rectangle1.cpp.i
-.PHONY : __/src/rectangle1.i
+class/classes/edoug011/CS100-Lab-5/src/rectangle1.i: class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.i
+.PHONY : class/classes/edoug011/CS100-Lab-5/src/rectangle1.i
 
 # target to preprocess a source file
-__/src/rectangle1.cpp.i:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runAllTests.dir/build.make tests/CMakeFiles/runAllTests.dir/__/src/rectangle1.cpp.i
-.PHONY : __/src/rectangle1.cpp.i
+class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.i
+.PHONY : class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.i
 
-__/src/rectangle1.s: __/src/rectangle1.cpp.s
-.PHONY : __/src/rectangle1.s
+class/classes/edoug011/CS100-Lab-5/src/rectangle1.s: class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.s
+.PHONY : class/classes/edoug011/CS100-Lab-5/src/rectangle1.s
 
 # target to generate assembly for a file
-__/src/rectangle1.cpp.s:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runAllTests.dir/build.make tests/CMakeFiles/runAllTests.dir/__/src/rectangle1.cpp.s
-.PHONY : __/src/rectangle1.cpp.s
+class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.s
+.PHONY : class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.s
 
 test.o: test.cpp.o
 .PHONY : test.o
 
 # target to build an object file
 test.cpp.o:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runAllTests.dir/build.make tests/CMakeFiles/runAllTests.dir/test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/test.cpp.o
 .PHONY : test.cpp.o
 
 test.i: test.cpp.i
@@ -167,7 +166,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runAllTests.dir/build.make tests/CMakeFiles/runAllTests.dir/test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -175,7 +174,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runAllTests.dir/build.make tests/CMakeFiles/runAllTests.dir/test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/test.cpp.s
 .PHONY : test.cpp.s
 
 # Help Target
@@ -187,9 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... runAllTests"
-	@echo "... __/src/rectangle1.o"
-	@echo "... __/src/rectangle1.i"
-	@echo "... __/src/rectangle1.s"
+	@echo "... class/classes/edoug011/CS100-Lab-5/src/rectangle1.o"
+	@echo "... class/classes/edoug011/CS100-Lab-5/src/rectangle1.i"
+	@echo "... class/classes/edoug011/CS100-Lab-5/src/rectangle1.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
@@ -204,6 +203,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /class/classes/edoug011/CS100-Lab-5 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

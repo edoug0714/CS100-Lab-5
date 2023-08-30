@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp" "tests/CMakeFiles/runAllTests.dir/__/src/rectangle1.cpp.o" "gcc" "tests/CMakeFiles/runAllTests.dir/__/src/rectangle1.cpp.o.d"
-  "/class/classes/edoug011/CS100-Lab-5/tests/test.cpp" "tests/CMakeFiles/runAllTests.dir/test.cpp.o" "gcc" "tests/CMakeFiles/runAllTests.dir/test.cpp.o.d"
+  "/class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp" "CMakeFiles/runAllTests.dir/class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.o" "gcc" "CMakeFiles/runAllTests.dir/class/classes/edoug011/CS100-Lab-5/src/rectangle1.cpp.o.d"
+  "/class/classes/edoug011/CS100-Lab-5/tests/test.cpp" "CMakeFiles/runAllTests.dir/test.cpp.o" "gcc" "CMakeFiles/runAllTests.dir/test.cpp.o.d"
   )
 
 # Targets to which this target links.

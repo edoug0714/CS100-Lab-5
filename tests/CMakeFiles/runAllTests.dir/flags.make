@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/class/classes/edoug011/CS100-Lab-5/include -I/class/classes/edoug011/CS100-Lab-5/tests/googletest/include
+CXX_INCLUDES = 
 
-CXX_FLAGS =  -std=c++1y
+CXX_FLAGS = 
 
