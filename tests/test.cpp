@@ -1,5 +1,5 @@
-#include "googletest/googletest/include/gtest/gtest.h"
-#include "rectangle.h"
+#include "gtest/gtest.h"
+#include "../header/rectangle.hpp"
 
 TEST(ConstructorTests, testDefault) {
     EXPECT_NOT_THROW(Rectangle *aRectangle());

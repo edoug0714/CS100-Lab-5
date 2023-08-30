@@ -4,7 +4,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/lib")
 
 add_executable(runAllTests
   test.cpp 
-  rectangle1.cpp
+  ../src/rectangle1.cpp
 )
 
 target_link_libraries(runAllTests gtest gtest_main)
